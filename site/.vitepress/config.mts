@@ -20,6 +20,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '开始阅读', link: '/chapters/00-recommendations' },
+      { text: '番外', link: '/chapters/27-twitter-feud' },
     ],
 
     sidebar: [
@@ -83,6 +84,12 @@ export default defineConfig({
         items: [
           { text: '结语', link: '/chapters/25-epilogue' },
           { text: '附录：CZ 的原则', link: '/chapters/26-cz-principles' },
+        ]
+      },
+      {
+        text: '番外',
+        items: [
+          { text: 'Twitter 风暴：回忆录引爆的 11 年恩怨', link: '/chapters/27-twitter-feud' },
         ]
       },
     ],
