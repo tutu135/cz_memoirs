@@ -444,6 +444,34 @@
   border-left: 4px solid #e6b325;
 }
 
+.tweet-card--ninemei {
+  border-left: 4px solid #8b5cf6;
+}
+
+/* 推文内嵌媒体图 */
+.tweet-card__media {
+  margin: 0.9em 0 0.3em;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tweet-card__media img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0;
+}
+.tweet-card__media-caption {
+  padding: 8px 12px;
+  font-size: 0.78em;
+  color: var(--vp-c-text-2);
+  background: var(--vp-c-bg);
+  border-top: 1px solid var(--vp-c-divider);
+  text-align: center;
+}
+
 .tweet-card--highlight {
   box-shadow: 0 6px 28px rgba(224, 49, 49, 0.18);
   border-color: rgba(224, 49, 49, 0.35);
