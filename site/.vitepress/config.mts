@@ -1,16 +1,18 @@
 import { defineConfig } from 'vitepress'
 
+const base = process.env.SITE_BASE ?? '/'
+
 export default defineConfig({
   lang: 'zh-CN',
   title: '币安人生',
   description: '幸运、韧性与保护用户的回忆录 — 赵长鹏自传',
-  base: '/',
+  base,
   cleanUrls: false,
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
-    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/icon-192.png' }],
+    ['link', { rel: 'icon', href: `${base}favicon.ico` }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}apple-touch-icon.png` }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '192x192', href: `${base}icon-192.png` }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
     ['link', { href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap', rel: 'stylesheet' }],
